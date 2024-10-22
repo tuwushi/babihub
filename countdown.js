@@ -20,3 +20,4 @@ const countdownFunction = setInterval(function () {
         button.disabled = false;
     }
 }, 1000);
+
