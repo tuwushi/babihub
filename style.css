@@ -1,44 +1,7 @@
-/* Header Styles */
-header {
-    background-color: rgba(255, 239, 213, 0.9); /* Light cream background */
-    padding: 15px 0;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #FF6F61;
-    font-size: 1.2rem;
-    padding: 10px 15px;
-    border-radius: 10px;
-    transition: background-color 0.3s ease;
-}
-
-nav ul li a:hover {
-    background-color: #FFEDD5;
-}
 /* General Styles */
 body {
     font-family: 'Comic Sans MS', sans-serif;
     text-align: center;
-    background-image: url(file:///C:/Users/Administrator/Downloads/—Pngtree—cartoon%20green%20vector%20avocado%20fruit_1271020.png); /* Update with your background */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     margin: 0;
     padding: 0;
     color: #333;
@@ -51,6 +14,17 @@ body {
     align-items: center;
     height: 100vh;
     flex-direction: column;
+    position: relative; /* Added for positioning the background image */
+}
+
+.background-img {
+    position: absolute; /* Position the image absolutely */
+    top: 0;
+    left: 0;
+    width: 100%; /* Make it cover the entire container */
+    height: 100%; /* Make it cover the entire container */
+    object-fit: cover; /* Ensure the image covers the container without distortion */
+    z-index: -1; /* Send the image to the back */
 }
 
 h1 {
@@ -59,6 +33,7 @@ h1 {
     margin-bottom: 0;
 }
 
+/* Countdown Styles */
 #countdown {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
