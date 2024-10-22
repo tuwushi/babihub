@@ -15,12 +15,17 @@ header {
     z-index: 1000;
 }
 
+nav {
+    display: flex;
+    justify-content: flex-end; /* Aligns the nav items to the right */
+    padding: 0 20px; /* Adds padding to the left and right of the nav */
+}
+
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
 }
 
 nav ul li {
