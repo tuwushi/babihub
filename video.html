@@ -1,16 +1,19 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video</title>
-    <link rel="stylesheet" href="style2.css">
+    <title>Video Surprise</title>
+    <link rel="stylesheet" href="video.css">
 </head>
 <body>
-
+    
     <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Babihub Logo"> <!-- Update the path as needed -->
+        </div>
         <nav>
             <ul>
+                <li><a href="home.html">Home</a></li>
                 <li><a href="video.html">Video</a></li>
                 <li><a href="letter.html">Letter</a></li>
                 <li><a href="daily.html">Daily Login Reward</a></li>
@@ -18,9 +21,16 @@
         </nav>
     </header>
 
-    <h1>Your Birthday Surprise Video!</h1>
-    <div class="video-section">
-        <button onclick="window.open('https://www.youtube.com/watch?v=YOUR_VIDEO_LINK', '_blank')">Watch Video</button>
+    <img src="images/background1.png" alt="Cute Background" class="background-img"> 
+    <div class="container">
+        <h1>🎥 Video Surprise</h1>
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen></iframe>
+        </div>
+        <p class="description">I made this special video just for you! It’s like a little vlog expressing my love and joy for having you in my life. Enjoy every moment!</p>
     </div>
 
 </body>

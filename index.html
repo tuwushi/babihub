@@ -7,28 +7,31 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <img src="images/background.png" alt="Background Image" class="background-img"> <!-- Added background image here -->
+
     <div class="container">
-        <img src= images/background.png alt="Background Image" class="background-img">
         <h1>Happy Birthday!</h1>
-        <div id="countdown">
-            <div class="date">
-                <div id="days">25</div>
-                <div>Days</div>
-            </div>
-            <div class="date">
-                <div id="hours">15</div>
-                <div>Hours</div>
-            </div>
-            <div class="date">
-                <div id="minutes">29</div>
-                <div>Minutes</div>
-            </div>
-            <div class="date">
-                <div id="seconds">59</div>
-                <div>Seconds</div>
+        <div class="countdown-box">
+            <div id="countdown">
+                <div class="date">
+                    <div class="circle" id="days">25</div>
+                    <div>Days</div>
+                </div>
+                <div class="date">
+                    <div class="circle" id="hours">15</div>
+                    <div>Hours</div>
+                </div>
+                <div class="date">
+                    <div class="circle" id="minutes">29</div>
+                    <div>Minutes</div>
+                </div>
+                <div class="date">
+                    <div class="circle" id="seconds">59</div>
+                    <div>Seconds</div>
+                </div>
             </div>
         </div>
-        <button id="countdown-btn" onclick="window.location.href='home.html';" disabled> Go to Surprise!</button>
+        <button id="countdown-btn" disabled>Go to Surprise!</button>
     </div>
 
     <script src="countdown.js"></script>
