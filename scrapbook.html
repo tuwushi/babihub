@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Babihub Scrapbook</title>
+    <link rel="stylesheet" href="scrapbook.css"> <!-- Link to the home.css for consistent styling -->
+</head>
+<body>
+    
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Babihub Logo"> <!-- Update the path as needed -->
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="video.html">Video</a></li>
+                <li><a href="letter.html">Letter</a></li>
+                <li><a href="daily.html">Daily Login Reward</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <img src="images/background1.png" alt="Cute Background" class="background-img"> 
+
+    <div class="scrapbook-container">
+        <div class="page" id="page1">
+            <h2>📅 First time we met IRL</h2>
+            <img src="images/photo1.jpg" alt="First Meet" class="photo">
+            <p>You have nice tits</p>
+        </div>
+        <div class="page" id="page2">
+            <h2>💖 First date together</h2>
+            <img src="images/photo2.jpg" alt="First Date" class="photo">
+            <p>It was a good spot too I wanna fuck you there.</p>
+        </div>
+        <div class="page" id="page3">
+            <h2>😢 First time we parted</h2>
+            <img src="images/photo3.jpg" alt="First Parted" class="photo">
+            <p>huhuhu I wanted to keep being with you at that time</p>
+        </div>
+        <div class="page" id="page4">
+            <h2>🌟 Second time we met again</h2>
+            <img src="images/photo4.jpg" alt="Second Meet" class="photo">
+            <p>hehehe i remember it was just 1 week then I got to see you again</p>
+        </div>
+        <div class="page" id="page5">
+            <h2>👨‍👩‍👧‍👦 First time meeting your tita and tito</h2>
+            <img src="images/photo5.jpg" alt="Meeting Tita and Tito" class="photo">
+            <p>They so chill asf and cool I like them</p>
+        </div>
+        <div class="page" id="page6">
+            <h2>🏞️ Meet up in Baguio</h2>
+            <img src="images/photo6.jpg" alt="Meet Up in Baguio" class="photo">
+            <p>It was meh but you know I got to be with you meheheh</p>
+        </div>
+        <div class="page" id="page7">
+            <h2>🏛️ Museum date</h2>
+            <img src="images/photo7.jpg" alt="Museum Date" class="photo">
+            <p>Boring ahh museum but it wasn’t that boring because you were there</p>
+        </div>
+    </div>
+
+    <div class="navigation">
+        <button onclick="prevPage()">&#10094; Prev</button>
+        <button onclick="nextPage()">Next &#10095;</button>
+    </div>
+
+    <script>
+        let currentPage = 0;
+        const pages = document.querySelectorAll('.page');
+        pages[currentPage].style.display = 'block';
+
+        function showPage(index) {
+            pages.forEach(page => page.style.display = 'none');
+            pages[index].style.display = 'block';
+        }
+
+        function nextPage() {
+            if (currentPage < pages.length - 1) {
+                currentPage++;
+                showPage(currentPage);
+            }
+        }
+
+        function prevPage() {
+            if (currentPage > 0) {
+                currentPage--;
+                showPage(currentPage);
+            }
+        }
+    </script>
+</body>
+</html>

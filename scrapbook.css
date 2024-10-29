@@ -19,7 +19,6 @@ body {
     opacity: 0.8;
 }
 
-
 header {
     display: flex; /* Use flexbox for header layout */
     align-items: center; /* Center items vertically */
@@ -69,36 +68,51 @@ nav ul li a:hover {
     background-color: #febfc7;
     color: white;
 }
-/* Container Styling */
-.container {
-    max-width: 800px; /* Adjusted width for the video page */
-    margin: 100px auto;
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 40px;
-    border-radius: 20px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-}
 
-/* Video Wrapper */
-.video-wrapper {
-    margin: 20px 0;
+/* Scrapbook Styles */
+.scrapbook-container {
+    margin: 20px auto;
+    max-width: 800px;
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
-    height: 0;
 }
 
-.video-wrapper iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
+.page {
+    display: none; /* Hide all pages initially */
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    transition: transform 0.5s ease;
+}
+
+.page img {
     width: 100%;
-    height: 100%;
-    border: none;
+    height: auto;
+    border-radius: 10px;
 }
 
-/* Description Styling */
-.description {
-    font-size: 1.2rem;
-    color: #666;
+.photo {
+    width: 200px; /* Make square photos */
+    height: 200px;
+    border-radius: 10px;
+}
+
+.navigation {
     margin-top: 20px;
+}
+
+button {
+    background-color: #febfc7;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff8ca4;
 }

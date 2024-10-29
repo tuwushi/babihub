@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daily Login Reward</title>
+    <title>Daily Logins</title>
     <link rel="stylesheet" href="daily.css">
 </head>
 <body>
@@ -21,24 +21,44 @@
             </ul>
         </nav>
     </header>
+
     <img src="images/background1.png" alt="Cute Background" class="background-img"> 
+
     <div class="container">
         <h1>Daily Login Reward</h1>
         <div class="login-reward">
             <div class="reward-item">
-                <span>Day 1 Reward: A sweet message ❤️</span>
+                <span>Day 1 Reward: Drinking with Your Friends❤️</span>
                 <button onclick="alert('You unlocked: A sweet message!')">Claim</button>
             </div>
             <div class="reward-item">
-                <span>Day 2 Reward: A cute picture 📸</span>
+                <span>Day 2 Reward: Free coupon for a good long back massage!</span>
                 <button onclick="alert('You unlocked: A cute picture!')">Claim</button>
             </div>
             <div class="reward-item">
-                <span>Day 3 Reward: A special surprise 🎁</span>
-                <button onclick="alert('You unlocked: A special surprise!')">Claim</button>
+                <span>Day 3 Reward: Steamy hot Sex</span>
+                <button onclick="alert('Constant Hot Sex')">Claim</button>
+            </div>
+            <div class="reward-item">
+                <span>Day 4 Reward: I'll take care of you!</span>
+                <button onclick="alert('YFor this day I will be taking care of you since its your duty')">Claim</button>
+            </div>
+            <div class="reward-item">
+                <span> Random Date Generator</span>
+                <button onclick="showDateGenerator()">Claim</button>
+            </div>
+        </div>
+
+        <!-- Hidden Date Generator Section -->
+        <div id="date-generator" class="date-generator" style="display: none;">
+            <h2>Your Date Night Plan:</h2>
+            <button onclick="generateDate()">Generate Date Night</button>
+            <div id="result" class="result">
+                <p><strong>Activity:</strong> <span id="activity"></span></p>
             </div>
         </div>
     </div>
 
+    <script src="dateNight.js"></script>
 </body>
 </html>
