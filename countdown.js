@@ -21,3 +21,7 @@ const countdownFunction = setInterval(function () {
     }
 }, 1000);
 
+// Redirect to home.html when button is clicked
+button.addEventListener("click", () => {
+    window.location.href = "home.html";
+});
