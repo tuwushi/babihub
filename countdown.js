@@ -21,7 +21,7 @@ const countdownFunction = setInterval(function () {
     }
 }, 1000);
 
-// Redirect to home.html when button is clicked
+// Redirect to home.html for GitHub Pages
 button.addEventListener("click", () => {
-    window.location.href = "home.html";
+    window.location.href = "/babihub/home.html"; // Update 'repository-name' with your actual repository name
 });
